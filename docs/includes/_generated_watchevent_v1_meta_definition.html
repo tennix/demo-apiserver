@@ -1,0 +1,15 @@
+<H2 id="watchevent-v1-meta">WatchEvent v1 meta</H2>
+<TABLE class="col-md-8">
+<THEAD><TR><TH>Group</TH><TH>Version</TH><TH>Kind</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>meta</CODE></TD><TD><CODE>v1</CODE></TD><TD><CODE>WatchEvent</CODE></TD></TR>
+</TBODY>
+</TABLE>
+<P>Event represents a single event to a watched resource.</P>
+<TABLE>
+<THEAD><TR><TH>Field</TH><TH>Description</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>object</CODE></TD><TD>Object is:  * If Type is Added or Modified: the new state of the object.  * If Type is Deleted: the state of the object immediately before deletion.  * If Type is Error: *Status is recommended; other types may make sense    depending on context.</TD></TR>
+<TR><TD><CODE>type</CODE><BR /><I>string</I></TD><TD></TD></TR>
+</TBODY>
+</TABLE>

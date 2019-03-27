@@ -1,0 +1,19 @@
+apiVersion: core.pingcap.com/v1alpha1
+kind: TidbInstance
+metadata:
+  name: tidbinstance-example
+spec:
+  pd:
+    image: pingcap/pd:v2.1.0
+    replicas: 3
+  tikv:
+    image: pingcap/tikv:v2.1.0
+    replicas: 3
+    resources:
+      requests:
+        cpu: 16000m
+        memory: 32Gi
+        storage: 500Gi
+  tidb:
+    image: pingcap/tidb:v2.1.0
+    replicas: 2

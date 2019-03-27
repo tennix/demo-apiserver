@@ -1,0 +1,20 @@
+<H2 id="serveraddressbyclientcidr-v1-meta">ServerAddressByClientCIDR v1 meta</H2>
+<TABLE class="col-md-8">
+<THEAD><TR><TH>Group</TH><TH>Version</TH><TH>Kind</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>meta</CODE></TD><TD><CODE>v1</CODE></TD><TD><CODE>ServerAddressByClientCIDR</CODE></TD></TR>
+</TBODY>
+</TABLE>
+<P>ServerAddressByClientCIDR helps the client to determine the server address that they should use, depending on the clientCIDR that they match.</P>
+<DIV class="alert alert-info col-md-8"><I class="fa fa-info-circle"></I> Appears In:
+ <UL>
+  <LI><a href="#apigroup-v1-meta">APIGroup [meta/v1]</a></LI>
+ </UL>
+</DIV>
+<TABLE>
+<THEAD><TR><TH>Field</TH><TH>Description</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>clientCIDR</CODE><BR /><I>string</I></TD><TD>The CIDR with which clients can match their IP to figure out the server address that they should use.</TD></TR>
+<TR><TD><CODE>serverAddress</CODE><BR /><I>string</I></TD><TD>Address of this server, suitable for a client that matches the above CIDR. This can be a hostname, hostname:port, IP or IP:port.</TD></TR>
+</TBODY>
+</TABLE>

@@ -1,0 +1,22 @@
+<H2 id="listmeta-v1-meta">ListMeta v1 meta</H2>
+<TABLE class="col-md-8">
+<THEAD><TR><TH>Group</TH><TH>Version</TH><TH>Kind</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>meta</CODE></TD><TD><CODE>v1</CODE></TD><TD><CODE>ListMeta</CODE></TD></TR>
+</TBODY>
+</TABLE>
+<P>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</P>
+<DIV class="alert alert-info col-md-8"><I class="fa fa-info-circle"></I> Appears In:
+ <UL>
+  <LI><a href="#status-v1-meta">Status [meta/v1]</a></LI>
+  <LI><a href="#tidbinstancelist-v1alpha1-core">TidbInstanceList [core/v1alpha1]</a></LI>
+ </UL>
+</DIV>
+<TABLE>
+<THEAD><TR><TH>Field</TH><TH>Description</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>continue</CODE><BR /><I>string</I></TD><TD>continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a consistent list may not be possible if the server configuration has changed or more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response, unless you have received this token from an error message.</TD></TR>
+<TR><TD><CODE>resourceVersion</CODE><BR /><I>string</I></TD><TD>String that identifies the server&#39;s internal version of this object that can be used by clients to determine when objects have changed. Value must be treated as opaque by clients and passed unmodified back to the server. Populated by the system. Read-only. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency</TD></TR>
+<TR><TD><CODE>selfLink</CODE><BR /><I>string</I></TD><TD>selfLink is a URL representing this object. Populated by the system. Read-only.</TD></TR>
+</TBODY>
+</TABLE>

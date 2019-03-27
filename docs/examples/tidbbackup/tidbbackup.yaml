@@ -1,0 +1,7 @@
+note: TidbBackup Example
+sample: |
+  apiVersion: core.pingcap.com/v1alpha1
+  kind: TidbBackup
+  metadata:
+    name: tidbbackup-example
+  spec:

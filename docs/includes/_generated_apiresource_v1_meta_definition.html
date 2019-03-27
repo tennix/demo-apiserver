@@ -1,0 +1,27 @@
+<H2 id="apiresource-v1-meta">APIResource v1 meta</H2>
+<TABLE class="col-md-8">
+<THEAD><TR><TH>Group</TH><TH>Version</TH><TH>Kind</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>meta</CODE></TD><TD><CODE>v1</CODE></TD><TD><CODE>APIResource</CODE></TD></TR>
+</TBODY>
+</TABLE>
+<P>APIResource specifies the name of a resource and whether it is namespaced.</P>
+<DIV class="alert alert-info col-md-8"><I class="fa fa-info-circle"></I> Appears In:
+ <UL>
+  <LI><a href="#apiresourcelist-v1-meta">APIResourceList [meta/v1]</a></LI>
+ </UL>
+</DIV>
+<TABLE>
+<THEAD><TR><TH>Field</TH><TH>Description</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>categories</CODE><BR /><I>string array</I></TD><TD>categories is a list of the grouped resources this resource belongs to (e.g. &#39;all&#39;)</TD></TR>
+<TR><TD><CODE>group</CODE><BR /><I>string</I></TD><TD>group is the preferred group of the resource.  Empty implies the group of the containing resource list. For subresources, this may have a different value, for example: Scale&#34;.</TD></TR>
+<TR><TD><CODE>kind</CODE><BR /><I>string</I></TD><TD>kind is the kind for the resource (e.g. &#39;Foo&#39; is the kind for a resource &#39;foo&#39;)</TD></TR>
+<TR><TD><CODE>name</CODE><BR /><I>string</I></TD><TD>name is the plural name of the resource.</TD></TR>
+<TR><TD><CODE>namespaced</CODE><BR /><I>boolean</I></TD><TD>namespaced indicates if a resource is namespaced or not.</TD></TR>
+<TR><TD><CODE>shortNames</CODE><BR /><I>string array</I></TD><TD>shortNames is a list of suggested short names of the resource.</TD></TR>
+<TR><TD><CODE>singularName</CODE><BR /><I>string</I></TD><TD>singularName is the singular name of the resource.  This allows clients to handle plural and singular opaquely. The singularName is more correct for reporting status on a single item and both singular and plural are allowed from the kubectl CLI interface.</TD></TR>
+<TR><TD><CODE>verbs</CODE><BR /><I>string array</I></TD><TD>verbs is a list of supported kube verbs (this includes get, list, watch, create, update, patch, delete, deletecollection, and proxy)</TD></TR>
+<TR><TD><CODE>version</CODE><BR /><I>string</I></TD><TD>version is the preferred version of the resource.  Empty implies the version of the containing resource list For subresources, this may have a different value, for example: v1 (while inside a v1beta1 version of the core resource&#39;s group)&#34;.</TD></TR>
+</TBODY>
+</TABLE>

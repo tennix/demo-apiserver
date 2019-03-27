@@ -1,0 +1,7 @@
+note: TidbInstance Example
+sample: |
+  apiVersion: core.pingcap.com/v1alpha1
+  kind: TidbInstance
+  metadata:
+    name: tidbinstance-example
+  spec:

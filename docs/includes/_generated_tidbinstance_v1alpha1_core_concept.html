@@ -1,0 +1,69 @@
+<H1 id="tidbinstance-v1alpha1-core">TidbInstance v1alpha1 core</H1>
+<BUTTON class="btn btn-info" type="button" data-toggle="collapse"
+  data-target="#example-tidbinstance-v1alpha1-core" aria-controls="example-tidbinstance-v1alpha1-core"
+  aria-expanded="false">example example</BUTTON>
+<DIV class="collapse" id="example-tidbinstance-v1alpha1-core">
+  <DIV class="panel panel-default">
+<DIV class="panel-heading">TidbInstance Example</DIV>
+  <DIV class="panel-body">
+<PRE class="example"><CODE class="lang-yaml">
+apiVersion: core.pingcap.com/v1alpha1
+kind: TidbInstance
+metadata:
+  name: tidbinstance-example
+spec:
+
+</CODE></PRE></DIV></DIV></DIV>
+<TABLE class="col-md-8">
+<THEAD><TR><TH>Group</TH><TH>Version</TH><TH>Kind</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>core</CODE></TD><TD><CODE>v1alpha1</CODE></TD><TD><CODE>TidbInstance</CODE></TD></TR>
+</TBODY>
+</TABLE>
+<DIV class="alert alert-info col-md-8"><I class="fa fa-info-circle"></I> Appears In:
+ <UL>
+  <LI><a href="#tidbinstancelist-v1alpha1-core">TidbInstanceList [core/v1alpha1]</a></LI>
+ </UL>
+</DIV>
+<TABLE>
+<THEAD><TR><TH>Field</TH><TH>Description</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>apiVersion</CODE><BR /><I>string</I></TD><TD>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources</TD></TR>
+<TR><TD><CODE>kind</CODE><BR /><I>string</I></TD><TD>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds</TD></TR>
+<TR><TD><CODE>metadata</CODE><BR /><I><a href="#objectmeta-v1-meta">ObjectMeta</a></I></TD><TD></TD></TR>
+<TR><TD><CODE>spec</CODE><BR /><I><a href="#tidbinstancespec-v1alpha1-core">TidbInstanceSpec</a></I></TD><TD></TD></TR>
+<TR><TD><CODE>status</CODE><BR /><I><a href="#tidbinstancestatus-v1alpha1-core">TidbInstanceStatus</a></I></TD><TD></TD></TR>
+</TBODY>
+</TABLE>
+<H3 id="tidbinstancespec-v1alpha1-core">TidbInstanceSpec v1alpha1 core</H3>
+<DIV class="alert alert-info col-md-8"><I class="fa fa-info-circle"></I> Appears In:
+ <UL>
+  <LI><a href="#tidbinstance-v1alpha1-core">TidbInstance [core/v1alpha1]</a></LI>
+ </UL>
+</DIV>
+<TABLE>
+<THEAD><TR><TH>Field</TH><TH>Description</TH></TR></THEAD>
+<TBODY>
+</TBODY>
+</TABLE>
+<H3 id="tidbinstancestatus-v1alpha1-core">TidbInstanceStatus v1alpha1 core</H3>
+<DIV class="alert alert-info col-md-8"><I class="fa fa-info-circle"></I> Appears In:
+ <UL>
+  <LI><a href="#tidbinstance-v1alpha1-core">TidbInstance [core/v1alpha1]</a></LI>
+ </UL>
+</DIV>
+<TABLE>
+<THEAD><TR><TH>Field</TH><TH>Description</TH></TR></THEAD>
+<TBODY>
+</TBODY>
+</TABLE>
+<H3 id="tidbinstancelist-v1alpha1-core">TidbInstanceList v1alpha1 core</H3>
+<TABLE>
+<THEAD><TR><TH>Field</TH><TH>Description</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>apiVersion</CODE><BR /><I>string</I></TD><TD>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources</TD></TR>
+<TR><TD><CODE>items</CODE><BR /><I><a href="#tidbinstance-v1alpha1-core">TidbInstance</a> array</I></TD><TD></TD></TR>
+<TR><TD><CODE>kind</CODE><BR /><I>string</I></TD><TD>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds</TD></TR>
+<TR><TD><CODE>metadata</CODE><BR /><I><a href="#listmeta-v1-meta">ListMeta</a></I></TD><TD></TD></TR>
+</TBODY>
+</TABLE>

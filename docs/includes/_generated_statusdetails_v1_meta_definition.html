@@ -1,0 +1,24 @@
+<H2 id="statusdetails-v1-meta">StatusDetails v1 meta</H2>
+<TABLE class="col-md-8">
+<THEAD><TR><TH>Group</TH><TH>Version</TH><TH>Kind</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>meta</CODE></TD><TD><CODE>v1</CODE></TD><TD><CODE>StatusDetails</CODE></TD></TR>
+</TBODY>
+</TABLE>
+<P>StatusDetails is a set of additional properties that MAY be set by the server to provide additional information about a response. The Reason field of a Status object defines what attributes will be set. Clients must ignore fields that do not match the defined type of each attribute, and should assume that any attribute may be empty, invalid, or under defined.</P>
+<DIV class="alert alert-info col-md-8"><I class="fa fa-info-circle"></I> Appears In:
+ <UL>
+  <LI><a href="#status-v1-meta">Status [meta/v1]</a></LI>
+ </UL>
+</DIV>
+<TABLE>
+<THEAD><TR><TH>Field</TH><TH>Description</TH></TR></THEAD>
+<TBODY>
+<TR><TD><CODE>causes</CODE><BR /><I><a href="#statuscause-v1-meta">StatusCause</a> array</I></TD><TD>The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes.</TD></TR>
+<TR><TD><CODE>group</CODE><BR /><I>string</I></TD><TD>The group attribute of the resource associated with the status StatusReason.</TD></TR>
+<TR><TD><CODE>kind</CODE><BR /><I>string</I></TD><TD>The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds</TD></TR>
+<TR><TD><CODE>name</CODE><BR /><I>string</I></TD><TD>The name attribute of the resource associated with the status StatusReason (when there is a single name which can be described).</TD></TR>
+<TR><TD><CODE>retryAfterSeconds</CODE><BR /><I>integer</I></TD><TD>If specified, the time in seconds before the operation should be retried. Some errors may indicate the client must take an alternate action - for those errors this field may indicate how long to wait before taking the alternate action.</TD></TR>
+<TR><TD><CODE>uid</CODE><BR /><I>string</I></TD><TD>UID of the resource. (when there is a single resource which can be described). More info: http://kubernetes.io/docs/user-guide/identifiers#uids</TD></TR>
+</TBODY>
+</TABLE>

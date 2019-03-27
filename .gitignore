@@ -1,0 +1,5 @@
+bin/
+/kubeconfig
+/apiserver.local.config/
+/default.etcd/
+/violations.report
